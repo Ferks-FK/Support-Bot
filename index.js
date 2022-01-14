@@ -52,3 +52,11 @@ bot.joinCommand({
     `
 })
 bot.onJoin()
+
+bot.command({
+ name: "execute",
+ code: `
+$eval[$message]
+$onlyForIds[333295169812037632;903667263247368222;{newEmbed:{author:Acess denied:https://cdn.discordapp.com/emojis/930854281563766924.webp?size=96&quality=lossless}{color:RED}}]
+`
+})
