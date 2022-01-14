@@ -68,7 +68,7 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         prototype: "button",
         code: `
         $interactionUpdate[;{newEmbed:{author:Installation Process:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**2º Step**
-        Now just select the theme you want!
+        Now just select the addon you want!
     
     > Work?}{image:https://cdn.discordapp.com/attachments/931346263213998130/931384503329505370/unknown.png}};{actionRow:{button:✅:primary:yes1_$authorID}{button:❌:primary:no1_$authorID}}]
     $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[author.id];{
