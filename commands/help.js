@@ -22,7 +22,10 @@ $addSelectMenu[1;help_$authorID;Select/Selecione;1;1;false;◽ Info:Information 
     Aprenda a como instalar tema!
 
     ➡️ \`addons\` - Learn how to install addons!
-    Aprenda a como instalar addons!}};{actionRow:{selectMenu:help_$authorID:Selecione:1:1:no:{selectMenuOptions:◽ Info:option1:Information commands}{selectMenuOptions:◽ Back:option2:Home menu}}}]
+    Aprenda a como instalar addons!
+
+    ➡️ \`addons\` - Submit a suggestion!
+    Envie uma sugestão!}};{actionRow:{selectMenu:help_$authorID:Selecione:1:1:no:{selectMenuOptions:◽ Info:option1:Information commands}{selectMenuOptions:◽ Back:option2:Home menu}}}]
     $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[author.id];{
         "content" : "❌ | Você não pode utilizar esta interação.",
         "ephemeral" : true,
