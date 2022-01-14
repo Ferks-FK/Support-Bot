@@ -2,7 +2,7 @@ const aoijs = require("aoi.js");
 
 const bot = new aoijs.Bot({
 prefix: "b!",
-token: "TOKEN", //Discord Bot Token
+token: "OTMxMzQzNjg5MTYxMjU3MDIw.YeDDZw.WWDY_N1nIurbVN1KXHYF0h33h94", //Discord Bot Token
 intents: "all", 
 });
 
