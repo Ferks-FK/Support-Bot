@@ -23,8 +23,6 @@ module.exports = [{
 \`\`\`wget https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/main/install.sh && bash install.sh\`\`\`
 
 Clique no ➡️ para o próximo passo!}};{actionRow:{button:➡️:primary:nextbr_$authorID}}]
-$wait[3s]
-$interactionUpdate[;{newEmbed:{author:Carregando...:https://cdn.discordapp.com/emojis/420359325437919243.gif?size=96&quality=lossless}{color:#36393F}}]
 $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[author.id];{
     "content": "❌ | Você não pode utilizar esta interação.",
     "ephemeral": "true",
@@ -58,8 +56,6 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==brthemes;]
         \`\`\`wget https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/main/install.sh && bash install.sh\`\`\`
         
         Click the ➡️ for the next step!}};{actionRow:{button:➡️:primary:nextus_$authorID}}]
-        $wait[3s]
-        $interactionUpdate[;{newEmbed:{author:Loading...:https://cdn.discordapp.com/emojis/420359325437919243.gif?size=96&quality=lossless}{color:#36393F}}]
         $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[author.id];{
             "content": "❌ | Você não pode utilizar esta interação.",
             "ephemeral": "true",
