@@ -1,6 +1,7 @@
 module.exports = [{
     name: "addons",
     code: `
+    $deleteIn[1m]
     $author[1;Select;https://cdn.discordapp.com/emojis/907778763721441341.webp?size=96&quality=lossless]
     $description[1;:flag_us: $username, select language 
     for better experience.
@@ -15,6 +16,8 @@ module.exports = [{
         type: "interaction",
         prototype: "button",
         code: `
+        $interactionDelete
+        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Processo de Instalação:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**1º Passo**
         Execute este comando em seu terminal/ssh.
     \`\`\`bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)\`\`\`
@@ -34,6 +37,8 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
+        $interactionDelete
+        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Processo de Instalação:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**2º Passo**
        Agora basta selecionar o addon que você deseja!
     
@@ -49,6 +54,8 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
+        $interactionDelete
+        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Installation Process:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:Run this command in your terminal/ssh.
             \`\`\`bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)\`\`\`
         
@@ -67,6 +74,8 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
+        $interactionDelete
+        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Installation Process:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**2º Step**
         Now just select the addon you want!
     
@@ -82,6 +91,8 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
+        $interactionDelete
+        $wait[1m]
         $interactionUpdate[<@$authorID>;{newEmbed:{author:AutoAddons:https://cdn.discordapp.com/emojis/928693461568323584.gif?size=96&quality=lossless}{description::flag_br: Fico muito feliz por ter conseguido te ajudar!
         > Obrigado por usar nosso script, <@333295169812037632> agradece!
     
@@ -98,6 +109,8 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
+        $interactionDelete
+        $wait[1m]
         $interactionUpdate[<@$authorID>;{newEmbed:{author:AutoAddons:https://cdn.discordapp.com/emojis/928693846081146960.webp?size=96&quality=lossless}{description::flag_br: Uma pena que não consegui te ajudar!
         > Solicite suporte no canal: <#876956205556330547>
     
