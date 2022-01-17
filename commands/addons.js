@@ -68,8 +68,6 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
-        $interactionDelete
-        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Installation Process:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**2º Step**
         Now just select the addon you want!
     
@@ -85,8 +83,6 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
-        $interactionDelete
-        $wait[1m]
         $interactionUpdate[<@$authorID>;{newEmbed:{author:AutoAddons:https://cdn.discordapp.com/emojis/928693461568323584.gif?size=96&quality=lossless}{description::flag_br: Fico muito feliz por ter conseguido te ajudar!
         > Obrigado por usar nosso script, <@333295169812037632> agradece!
     
