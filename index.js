@@ -43,14 +43,14 @@ bot.command({
     aliases: ['hello'],
     nonPrefixed: true,
     code: `
-        $cooldown[1m;Stop tagging me several times, wait %time%!]
-        $addCmdReactions[👋]
-        Hello <@$authorID>👋, welcome to the themes/addons installation script support group!
+    $cooldown[1m;Stop tagging me several times, wait %time%!]
+    $addCmdReactions[👋]
+    Hello <@$authorID> 👋, welcome to the themes/addons installation script support group!
 
-        If you have any problems with the script, don't hesitate to ask 😉
-        Aah, just a reminder, this group is for script-related support.
-        If you have any problems with Linux or with your Pterodactyl Panel, try <#876937145380638840>
-    `
+    If you have any problems with the script, don't hesitate to ask 😉
+    Aah, just a reminder, this group is for script-related support.
+    If you have any problems with Linux or with your Pterodactyl Panel, try <#876937145380638840>
+`
 })
 
 // Message for when someone joins the server
@@ -58,8 +58,8 @@ bot.command({
 bot.joinCommand({
     channel: "879769534872027156",
     code: `
-        ◽ Welcome to the server <@$authorID>!
-        Please check the channel <#932330911419211928> to prevent problems 🤠
+    ◽ Welcome to the server <@$authorID>!
+    Please check the channel <#932330911419211928> to prevent problems 🤠
     `
 })
 bot.onJoin()
@@ -68,7 +68,7 @@ bot.command({
     name: "execute",
     error: `$channelSendMessage[932643622015336498;$userTag had a problem: $error in $channelName!]`,
     code: `
-        $eval[$message]
-        $onlyForIds[333295169812037632;903667263247368222;{newEmbed:{author:Acess denied:https://cdn.discordapp.com/emojis/930854281563766924.webp?size=96&quality=lossless}{color:RED}}]
+    $eval[$message]
+    $onlyForIds[333295169812037632;903667263247368222;{newEmbed:{author:Acess denied:https://cdn.discordapp.com/emojis/930854281563766924.webp?size=96&quality=lossless}{color:RED}}]
     `
 })
