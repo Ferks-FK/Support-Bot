@@ -16,8 +16,6 @@ module.exports = [{
         type: "interaction",
         prototype: "button",
         code: `
-        $interactionDelete
-        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Processo de Instalação:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**1º Passo**
         Execute este comando em seu terminal/ssh.
     \`\`\`bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)\`\`\`
@@ -37,8 +35,6 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
-        $interactionDelete
-        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Processo de Instalação:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:**2º Passo**
        Agora basta selecionar o addon que você deseja!
     
@@ -54,8 +50,6 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
-        $interactionDelete
-        $wait[1m]
         $interactionUpdate[;{newEmbed:{author:Installation Process:https://cdn.discordapp.com/emojis/927972508081209386.webp?size=96&quality=lossless}{color:#36393F}{description:Run this command in your terminal/ssh.
             \`\`\`bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/main/install.sh)\`\`\`
         
@@ -109,8 +103,6 @@ $onlyIf[$advancedTextSplit[$interactionData[customId];_;1]==braddons;]
         type: "interaction",
         prototype: "button",
         code: `
-        $interactionDelete
-        $wait[1m]
         $interactionUpdate[<@$authorID>;{newEmbed:{author:AutoAddons:https://cdn.discordapp.com/emojis/928693846081146960.webp?size=96&quality=lossless}{description::flag_br: Uma pena que não consegui te ajudar!
         > Solicite suporte no canal: <#876956205556330547>
     
