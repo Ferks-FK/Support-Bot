@@ -1,7 +1,6 @@
 module.exports = [{
     name: "themes",
     code: `
-    $deleteIn[1m]
     $author[1;Select;https://cdn.discordapp.com/emojis/927032168931287060.webp?size=96&quality=lossless]
     $description[1;:flag_us: $username, select language 
     for better experience.
