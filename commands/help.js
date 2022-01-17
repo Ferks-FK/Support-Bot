@@ -16,8 +16,6 @@ $addSelectMenu[1;help_$authorID;Select/Selecione;1;1;false;◽ Info:Information 
         type: "interaction",
         prototype: "selectMenu",
         code: `
-        $interactionDelete
-        $wait[3m]
         $interactionUpdate[<@$authorID>;{newEmbed:{title:Category: Info}{color:#36393F}{description:#COLON#flag_br#COLON# Veja a lista de comandos, logo abaixo.
         #COLON#flag_us#COLON# See the list of commands, just below.
     
@@ -43,8 +41,6 @@ $addSelectMenu[1;help_$authorID;Select/Selecione;1;1;false;◽ Info:Information 
     type: "interaction",
     prototype: "selectMenu",
     code: `
-    $interactionDelete
-    $wait[3m]
     $interactionUpdate[<@$authorID>;{newEmbed:{author:Help Menu:https://cdn.discordapp.com/emojis/912694358833254422.webp?size=96&quality=lossless}{description::flag_br: Olá, seja muito bem vindo(a) ao menu de ajuda!
         > Veja os comandos de acordo com suas categorias.
     
